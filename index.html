@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label>
+          Player 1 Name:
+          <input type="text" name="p1name" required />
+        </label>
+        <label>
+          Choose Marker:
+          <label>
+            X
+            <input type="radio" name="marker" value="X" />
+          </label>
+          <label>
+            Y
+            <input type="radio" name="marker" value="Y" />
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Player 2 Name:
+          <input type="text" name="p2name" required />
+        </label>
+      </fieldset>
+      <button type="submit">Start</button>
+    </form>
+    <div class="game-container">
+      <p class="announcement"></p>
+      <p class="score"></p>
+      <div class="container">
+        <div class="0"></div>
+        <div class="1"></div>
+        <div class="2"></div>
+        <div class="3"></div>
+        <div class="4"></div>
+        <div class="5"></div>
+        <div class="6"></div>
+        <div class="7"></div>
+        <div class="8"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: blue;
+  background-color: #1a1a2e;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+form {
+  display: flex;
+  gap: 2em;
+  position: relative;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+fieldset input {
+  padding: 0.7em;
+  border: none;
+  background-color: rgba(135, 206, 235, 0.4);
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-family: "Pacifico", cursive;
+  color: orange;
+  font-size: 1.2rem;
+}
+
+fieldset input:focus {
+  background-color: rgba(135, 206, 235, 0.6);
+  outline: 3px solid orange;
+}
+
+fieldset input[type="radio"] {
+  accent-color: orange;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  outline: none;
+}
+
+form button {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em 2.5em;
+  color: black;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(255, 165, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(0, 89, 255, 0.5);
+  box-shadow: 0 6px 20px rgba(255, 165, 0, 0.7);
+  transform: translateX(-50%) translateY(-3px);
+}
+
+form button:active {
+  transform: translateX(-50%) translateY(0);
+  box-shadow: 0 3px 10px rgba(255, 165, 0, 0.5);
+}
+
+.game-container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: blue;
+  background-color: #1a1a2e;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px #000000;
+  gap: 2em;
+}
+
+.announcement {
+  border: 1px solid white;
+  padding: 1em;
+}
+.score {
+  border: 1px solid white;
+  padding: 1em;
+}
+.container {
+  border: none;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+}
+
+.container > div {
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(255, 0, 255, 0.5);
+  border: none;
+  border-radius: 10px;
+}
+
+.container > div:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(255, 165, 0, 0.5);
+  transform: translateX(-1%) translateY(-1px);
+}
+.game-container {
+  display: none;
+}
