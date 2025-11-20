@@ -25,7 +25,7 @@
           </label>
           <label>
             Y
-            <input type="radio" name="marker" value="Y" />
+            <input type="radio" name="marker" value="O" />
           </label>
         </label>
       </fieldset>
@@ -35,22 +35,23 @@
           <input type="text" name="p2name" required />
         </label>
       </fieldset>
-      <button type="submit">Start</button>
+      <button id="start-button" type="submit">Start</button>
     </form>
     <div class="game-container">
       <p class="announcement"></p>
       <p class="score"></p>
       <div class="container">
-        <div class="0"></div>
-        <div class="1"></div>
-        <div class="2"></div>
-        <div class="3"></div>
-        <div class="4"></div>
-        <div class="5"></div>
-        <div class="6"></div>
-        <div class="7"></div>
-        <div class="8"></div>
+        <div class="cell 0"></div>
+        <div class="cell 1"></div>
+        <div class="cell 2"></div>
+        <div class="cell 3"></div>
+        <div class="cell 4"></div>
+        <div class="cell 5"></div>
+        <div class="cell 6"></div>
+        <div class="cell 7"></div>
+        <div class="cell 8"></div>
       </div>
+      <button class="restart">&#8634;</button>
     </div>
     <script src="script.js"></script>
   </body>

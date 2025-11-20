@@ -98,16 +98,16 @@ form button:active {
   background-color: #1a1a2e;
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px #000000;
-  gap: 2em;
+  gap: 0.5em;
 }
 
 .announcement {
-  border: 1px solid white;
   padding: 1em;
+  color: orange;
 }
 .score {
-  border: 1px solid white;
   padding: 1em;
+  color: orange;
 }
 .container {
   border: none;
@@ -130,6 +130,39 @@ form button:active {
   box-shadow: 0 3px 10px rgba(255, 165, 0, 0.5);
   transform: translateX(-1%) translateY(-1px);
 }
-.game-container {
-  display: none;
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x {
+  color: orange;
+}
+
+.o {
+  color: aqua;
+}
+
+.restart {
+  font-size: 1.6rem;
+  background: #ffffff;
+  color: orange;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease;
+}
+
+.restart:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.restart:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
